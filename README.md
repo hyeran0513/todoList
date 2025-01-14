@@ -18,10 +18,9 @@ exports.list = async (req, res) => {
 router.get("/list", async (req, res) => {
 ...
 });
-
 ```
 
-<br/><br/>
+<br/>
 2) 임의의 라우터`routes/user.js`와, view(ejs) `views/user.ejs` 연결을 추가
 
  ```
