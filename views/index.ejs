@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Todo 애플리케이션</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><%= title %></h1>
+      <p>todo list <%= title %></p>
+
+      <form class="todo-form">
+        <input
+          type="text"
+          class="form-control"
+          id="new_todo"
+          placeholder="새로운 할 일 입력"
+        />
+        <button type="button" class="btn btn-primary">추가</button>
+      </form>
+
+      <table class="todo-table">
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>할 일</th>
+            <th>상태</th>
+            <th>액션</th>
+          </tr>
+        </thead>
+        <tbody id="todo-list"></tbody>
+      </table>
+
+      <a href="/user" class="btn btn-secondary">유저 정보로 이동</a>
+    </div>
+
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/todo.js"></script>
+  </body>
+</html>
